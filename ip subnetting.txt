@@ -1,0 +1,49 @@
+IP subnetting
+Ip address : 192.168.10.1
+
+1./26 subnet:
+host bits :6(32 bits -26 =6)
+network bits :26
+subnet calculation:
+total subnets=2^2=4(because we are taking 2 bits from host)
+total hosts per subnet = 2^6-2=64-2 =>62
+Network Address: 192.168.10.0
+first usable IP: 192.168.10.1
+Last usable Ip: 192.168.10.62
+Broadcast Address:192.168.10.63
+
+2. /28
+Subnet mask: 255.255.255.240(/28)
+network bits :28
+Host bits: 4(32-28=4)
+Calculation:
+Total subnets: 2^4=16bits(because we are taking 4bits from host)
+Total hosts: 2^4-2=>16-2=>14
+Network address:192.168.10.0
+First usable IP:192.168.10.1
+Last usable Ip: 192.168.10.14
+Broadcast Address:192.168.10.15
+
+3. /29
+Subnet mask:255.255.255.248
+Network bits:29
+Host bits:3(32-29=>3)
+Calculation:
+Total subnets: 2^5=>32(we are taking 5bits from host)
+Total hosts: 2^3-2=>8-2=>6
+Network address:192.168.10.0
+First usable Ip:192.168.10.1
+last usable IP:192.168.10.6
+Broadcast Address:192.168.10.7
+
+4. /30
+Subnet mask: 255.255.255.252
+Network bits: 30
+Host bits: 2(32-30=>2)
+Calculation:
+Total subnets: 2^6=>64(we are taking 6 bits from host)
+Total hosts: 2^2-2=>4-2=>2
+Network address: 192.168.10.0
+First usable IP:192.168.10.1
+LAst usable IP:192.168.10.2
+Broadcast Address:192.168.10.3
